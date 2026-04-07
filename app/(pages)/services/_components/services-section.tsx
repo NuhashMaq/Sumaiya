@@ -1,13 +1,9 @@
 'use client';
 import { motion } from 'motion/react';
 
-import { calendarIcon, calendarIconLight, zapIcon, zapIconLight } from '@/app/assets/assets';
+import { zapIcon, zapIconLight } from '@/app/assets/assets';
 import DynamicIcon from '@/components/dynamic-icon';
-import MyStack from '@/components/MyStack/MyStack';
 import SectionHeading from '@/components/SectionHeading';
-import ShowCase from '@/components/ShowCase';
-import Testimonials from '@/components/Testimonials';
-import ScheduleButton from '@/components/ui/ScheduleButton';
 import { myServicesPlans } from '@/data';
 
 import InfoRow from './info-row';
@@ -19,8 +15,8 @@ export default function ServicesSection() {
         <SectionHeading
           darkImage={zapIcon}
           lightImage={zapIconLight}
-          title='My Services'
-          description='Formulating comprehensive strategies to meet your design goals and exceed expectations.'
+          title='Publications'
+          description='Conference and review paper records with ongoing updates for detailed references.'
         />
 
         <div className='relative grid h-min w-full flex-0 grid-cols-1 justify-center gap-2.5 overflow-visible p-0 lg:grid-cols-[repeat(2,minmax(50px,1fr))] lg:grid-rows-[repeat(2,min-content)]'>
@@ -60,13 +56,10 @@ export default function ServicesSection() {
                       </div>
                     </div>
 
-                    {/* Right Section with Price */}
+                    {/* Right Section with timeline */}
                     <div className='flex items-center gap-0'>
                       <div className='flex flex-col justify-start'>
-                        <p className='text-light-gray-3 text-[18px] font-semibold'>{plan.price}/</p>
-                      </div>
-                      <div className='flex flex-col justify-start'>
-                        <p className='text-light-gray-2 text-[14px] font-medium'>hour</p>
+                        <p className='text-light-gray-3 text-[16px] font-semibold'>{plan.price}</p>
                       </div>
                     </div>
                   </div>
@@ -81,36 +74,22 @@ export default function ServicesSection() {
 
                 <div className='border-dark-gray-3 flex h-auto w-full flex-col gap-2 rounded-xl border py-2'>
                   <InfoRow
-                    label='Completed Works'
+                    label='Publication Venue'
                     value={plan.completedWorks}
                   />
                   <InfoRow
-                    label='Experiences'
+                    label='Publication Type'
                     value={plan.experience}
                   />
                   <InfoRow
-                    label='Total Hours Worked'
+                    label='Reference Status'
                     value={plan.totalHoursWorked}
-                  />
-                </div>
-                <div className='h-auto w-full'>
-                  <ScheduleButton
-                    label='Schedule Call'
-                    darkIcon={calendarIcon}
-                    lightIcon={calendarIconLight}
                   />
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
-
-        <MyStack />
-        <ShowCase
-          isMore={false}
-          showData={4}
-        />
-        <Testimonials />
       </div>
     </div>
   );

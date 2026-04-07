@@ -31,7 +31,7 @@ export default function ServiceItemLists() {
             <Link
               href={service.link}
               aria-label={`Read more about ${service.title}`}
-              className='bg-very-dark-gray border-dark-gray-3 group relative flex h-min w-full cursor-pointer flex-col flex-nowrap items-start justify-start gap-3.5 overflow-visible rounded-xl border p-5'
+              className='bg-very-dark-gray border-dark-gray-3 group relative flex h-full min-h-[168px] w-full cursor-pointer flex-col flex-nowrap items-start justify-start gap-3.5 overflow-visible rounded-xl border p-5'
             >
               {/* top  */}
               <div className='relative flex h-min w-full flex-none flex-nowrap items-center justify-start gap-2.5 overflow-visible p-0'>
@@ -51,7 +51,7 @@ export default function ServiceItemLists() {
                 </div>
 
                 <div className='relative flex h-auto flex-1 shrink-0 flex-col justify-start wrap-break-word whitespace-pre-wrap'>
-                  <p className='text-[20px] leading-[1.2em] font-bold text-white'>
+                  <p className='text-[18px] leading-[1.35] font-bold text-white sm:text-[20px]'>
                     {service.title}
                   </p>
                 </div>
@@ -70,7 +70,9 @@ export default function ServiceItemLists() {
               </div>
               {/* bottom */}
               <div className='relative flex h-auto w-full flex-none shrink-0 flex-col justify-start wrap-break-word whitespace-pre-wrap'>
-                <p className='text-light-gray-2 text-[15px] font-medium'>{service.description}</p>
+                <p className='text-light-gray-2 text-[14px] leading-normal font-medium sm:text-[15px]'>
+                  {service.description}
+                </p>
               </div>
             </Link>
           </motion.li>

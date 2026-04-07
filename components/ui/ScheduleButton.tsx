@@ -1,6 +1,4 @@
 'use client';
-import { getCalApi } from '@calcom/embed-react';
-import { useEffect } from 'react';
 
 import DynamicIcon from '../dynamic-icon';
 
@@ -11,17 +9,13 @@ interface ScheduleButtonProps {
 }
 
 export default function ScheduleButton({ lightIcon, darkIcon, label }: ScheduleButtonProps) {
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: '15min' });
-      cal('ui', { hideEventTypeDetails: false, layout: 'month_view' });
-    })();
-  }, []);
+  const openContactPage = () => {
+    window.location.href = '/contact';
+  };
+
   return (
     <button
-      data-cal-namespace='15min'
-      data-cal-link='psparwez/15min'
-      data-cal-config='{"layout":"month_view"}'
+      onClick={openContactPage}
       className='bg-almost-black hover:bg-dark-gray-4 border-dark-gray-4 group group relative flex w-full cursor-pointer items-center justify-center gap-2 rounded-[10px] border p-[14px_18px] transition-all duration-300'
     >
       <div className='flex items-center justify-center gap-2'>

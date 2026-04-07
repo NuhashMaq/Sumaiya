@@ -12,7 +12,7 @@ export default function AvailableForWorkBtn() {
         >
           <div className='pointer-events-none absolute h-3 w-3 animate-ping rounded-full bg-green-400/30'></div>
         </div>
-        <span className='text-light-gray-3 shrink-0 text-sm'>Available For Work</span>
+        <span className='text-light-gray-3 shrink-0 text-sm'>Open To Opportunities</span>
       </div>
     </button>
   );

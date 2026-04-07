@@ -1,53 +1,28 @@
-import Link from 'next/link';
 import React from 'react';
-import Marquee from 'react-fast-marquee';
-
-import { socialBrands } from '@/data/index';
-
-import DynamicIcon from '../dynamic-icon';
 
 export default function Brandcontainer() {
   return (
-    <section className='relative flex h-min w-full flex-none flex-nowrap gap-[30px] overflow-hidden p-[0px_0px_10px]'>
-      <div className='maskImage flex max-h-full w-full max-w-full justify-between overflow-hidden p-2.5'>
-        <MerqueeItems />
+    <section className='relative flex h-min w-full flex-none flex-col gap-4 overflow-hidden rounded-xl border border-dashed border-zinc-700 p-5'>
+      <h3 className='text-light-gray-4 text-xl font-bold'>About</h3>
+      <div className='space-y-3'>
+        <p className='text-light-gray-2 text-[15px] leading-[1.7] font-medium'>
+          I am Sumaiya Binty Kamal, a Civil Engineering student at Rajshahi University of
+          Engineering & Technology (RUET), currently in the final stage of my undergraduate
+          journey.
+        </p>
+        <p className='text-light-gray-2 text-[15px] leading-[1.7] font-medium'>
+          My academic path has helped me build a strong foundation in core civil engineering
+          subjects along with research skills, technical communication, and engineering software
+          usage. I am especially interested in learning through practical work, academic projects,
+          and research-based activities that contribute to real-world engineering solutions.
+        </p>
+        <p className='text-light-gray-2 text-[15px] leading-[1.7] font-medium'>
+          Alongside my studies, I have been involved in academic and extracurricular achievements,
+          including conference paper publication and recognition through student leadership
+          activities. I am continuously working to strengthen my technical profile and expand my
+          skills in analysis, design, communication, and engineering tools.
+        </p>
       </div>
     </section>
   );
 }
-
-const MerqueeItems = () => {
-  return (
-    <Marquee
-      className='w-full gap-7'
-      autoFill
-    >
-      <ul className='relative ml-20 flex h-full max-h-full w-full max-w-full shrink-0 place-items-center gap-7 p-0'>
-        {socialBrands.map((brand) => (
-          <li
-            key={brand.id}
-            className='h-full w-full'
-          >
-            <Link
-              className='relative block h-[45px] w-20 shrink-0 cursor-pointer overflow-hidden'
-              href={brand.link}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <div className='absolute top-0 right-0 bottom-0 left-0 shrink-0 rounded-[inherit]'>
-                <DynamicIcon
-                  darkImage={brand.icon}
-                  lightImage={brand.lightIcon}
-                  className='block h-full w-full shrink-0 rounded-[inherit] object-contain'
-                  altText={brand.name}
-                  width={80}
-                  height={45}
-                />
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </Marquee>
-  );
-};

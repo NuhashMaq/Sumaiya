@@ -8,7 +8,7 @@ export const formVariants = {
       ease: 'easeOut',
     },
   },
-};
+} as const;
 
 export const listVariants = {
   hidden: { opacity: 0 },
@@ -20,7 +20,7 @@ export const listVariants = {
       delayChildren: 0.3,
     },
   },
-};
+} as const;
 
 export const itemVariants = {
   hidden: { opacity: 0, x: -20 },
@@ -32,4 +32,4 @@ export const itemVariants = {
       ease: 'easeOut',
     },
   },
-};
+} as const;

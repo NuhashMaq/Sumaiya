@@ -19,15 +19,15 @@ import SectionHeading from './SectionHeading';
 export default function Testimonials() {
   return (
     <section
-      aria-labelledby='testimonials - Words From Happy Clients'
+      aria-labelledby='achievements-and-recognition'
       className='relative flex h-min w-full flex-none flex-col flex-nowrap items-start justify-start gap-[30px] overflow-visible'
     >
       <div className='relative h-auto w-full flex-none'>
         <SectionHeading
           darkImage={starLig}
           lightImage={starLigLight}
-          title='Words From Happy Clients'
-          description='Discover what satisfied clients have to say about their experiences working with me.'
+          title='Achievements & Recognition'
+          description='Academic milestones, publication outcomes, and leadership recognitions.'
         />
       </div>
 

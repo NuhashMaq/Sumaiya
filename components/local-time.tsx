@@ -33,9 +33,9 @@ export default function LocalTime() {
   return (
     <div
       className='hidden items-center gap-3 md:flex'
-      aria-label={`Local time in IST is ${time}`}
+      aria-label={`Local time in BST is ${time}`}
     >
-      <p className='text-light-gray-2 font-medium'>Local Time ( IST )</p>
+      <p className='text-light-gray-2 font-medium'>Local Time ( BST )</p>
       <div className='bg-dark-gray-1 flex w-[110px] items-center justify-center rounded-xl border-[rgb(24,24,26)] p-[14px_18px]'>
         <p
           className='text-light-gray-4 text-base leading-[1em] font-semibold tracking-[0.07em] tabular-nums'

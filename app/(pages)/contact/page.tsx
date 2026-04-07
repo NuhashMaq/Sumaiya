@@ -16,8 +16,8 @@ export default function ContactPage() {
           <SectionHeading
             darkImage={questionMarkIcon}
             lightImage={questionMarkIconLight}
-            title='Common Queries'
-            description='Get Answers to Common Queries. Your Questions, Addressed Simply.'
+            title='Quick Information'
+            description='Short answers about academic status, focus areas, and publication context.'
           />
 
           <FAQ data={faqData} />

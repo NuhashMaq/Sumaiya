@@ -31,7 +31,7 @@ export default function StackLists() {
             <Link
               href={stack.link}
               aria-label={`View more about ${stack.title}`}
-              className='bg-very-dark-gray border-dark-gray-3 group hover:bg-almost-black relative flex h-min w-full cursor-pointer flex-nowrap items-center justify-start gap-2.5 overflow-visible rounded-xl border p-[14px_24px_14px_14px] transition-all duration-500'
+              className='bg-very-dark-gray border-dark-gray-3 group hover:bg-almost-black relative flex h-full min-h-[108px] w-full cursor-pointer flex-nowrap items-center justify-start gap-2.5 overflow-visible rounded-xl border p-[14px_20px_14px_14px] transition-all duration-500'
             >
               {/* logo  */}
               <div className='bg-dark-gray-4 border-border-color relative flex h-min w-min flex-none flex-nowrap items-center justify-center gap-2.5 overflow-hidden rounded-[7px] border p-2'>
@@ -46,12 +46,14 @@ export default function StackLists() {
                 </div>
               </div>
               {/* text  */}
-              <div className='relative flex h-min flex-1 flex-col flex-nowrap items-start justify-start gap-0 overflow-visible p-0'>
+              <div className='relative flex h-min flex-1 flex-col flex-nowrap items-start justify-start gap-1 overflow-visible p-0'>
                 <div className='relative flex h-auto w-full flex-none shrink-0 flex-col wrap-break-word whitespace-pre-wrap'>
-                  <p className='text-light-gray-4 text-[18px] font-semibold'>{stack.title}</p>
+                  <p className='text-light-gray-4 text-[17px] leading-[1.35] font-semibold'>{stack.title}</p>
                 </div>
                 <div className='relative flex h-auto w-full flex-none shrink-0 flex-col wrap-break-word whitespace-pre-wrap'>
-                  <p className='text-light-gray-2 text-[15px] font-medium'>{stack.description}</p>
+                  <p className='text-light-gray-2 text-[14px] leading-[1.45] font-medium sm:text-[15px]'>
+                    {stack.description}
+                  </p>
                 </div>
               </div>
               {/* arrow  */}

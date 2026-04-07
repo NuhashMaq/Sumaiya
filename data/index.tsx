@@ -1,9 +1,7 @@
-import { Github, Instagram, Mail, User, Zap } from 'lucide-react';
+import { Linkedin, Mail, Phone, User, Zap } from 'lucide-react';
 
 import {
   asanaIcon,
-  athonLogo,
-  athonLogoLight,
   client_1,
   client_2,
   client_3,
@@ -27,8 +25,6 @@ import {
   pixelworksLogoLight,
   project_1,
   project_2,
-  project_3,
-  project_4,
   seoOptIcon,
   seoOptIconLight,
   slackIcon,
@@ -68,7 +64,7 @@ export const pagesLists: pagesListsType[] = [
   },
   {
     id: 2,
-    title: 'Services',
+    title: 'Publications',
     href: '/services',
     icon: <Zap />,
   },
@@ -83,74 +79,64 @@ export const pagesLists: pagesListsType[] = [
 export const socialLists: socialListsTypes[] = [
   {
     id: 1,
-    title: 'Instagram',
-    icon: <Instagram size={22} />,
-    link: 'https://www.instagram.com/',
+    title: 'Email',
+    icon: <Mail size={22} />,
+    link: 'mailto:sumaiyabintekamal219@gmail.com',
   },
   {
     id: 2,
-    title: 'Github',
-    icon: <Github size={22} />,
-    link: 'https://github.com/psparwez/portfolio',
+    title: 'LinkedIn',
+    icon: <Linkedin size={22} />,
+    link: 'https://www.linkedin.com/in/sumaiya-binty-kamal-b2aa7a313/',
   },
   {
     id: 3,
-    title: 'Twitter',
-    icon: (
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 24 24'
-        fill='currentColor'
-        width='22'
-        height='22'
-      >
-        <path d='M10.4883 14.651L15.25 21H22.25L14.3917 10.5223L20.9308 3H18.2808L13.1643 8.88578L8.75 3H1.75L9.26086 13.0145L2.31915 21H4.96917L10.4883 14.651ZM16.25 19L5.75 5H7.75L18.25 19H16.25Z'></path>
-      </svg>
-    ),
-    link: 'https://www.twitter.com/psparwez',
+    title: 'Phone',
+    icon: <Phone size={22} />,
+    link: 'tel:+8801318466465',
   },
 ];
 
 export const socialBrands: socialBrandsTypes[] = [
   {
     id: 1,
-    name: 'Discord',
-    link: 'https://discord.com',
+    name: 'RUET',
+    link: 'https://www.ruet.ac.bd',
     icon: discord,
     lightIcon: discord,
   },
   {
     id: 2,
-    name: 'Dribbble',
-    link: 'https://dribbble.com',
+    name: 'ICCEI',
+    link: 'https://www.ruet.ac.bd',
     icon: dribble,
     lightIcon: dribble,
   },
   {
     id: 3,
-    name: 'Facebook',
-    link: 'https://facebook.com',
+    name: 'ACI Chapter',
+    link: 'https://www.facebook.com/',
     icon: facebook,
     lightIcon: facebook,
   },
   {
     id: 4,
-    name: 'Pinterest',
-    link: 'https://pinterest.com',
+    name: 'Research',
+    link: 'https://scholar.google.com',
     icon: pinterest,
     lightIcon: pinterest,
   },
   {
     id: 5,
-    name: 'SnapChat',
-    link: 'https://snapchat.com',
+    name: 'Leadership',
+    link: 'https://www.linkedin.com',
     icon: snapchat,
     lightIcon: snapchat,
   },
   {
     id: 6,
-    name: 'Spotify',
-    link: 'https://open.spotify.com',
+    name: 'Engineering',
+    link: 'https://www.asce.org',
     icon: spotify,
     lightIcon: spotify,
   },
@@ -159,145 +145,137 @@ export const socialBrands: socialBrandsTypes[] = [
 export const counterLists: counterListsType[] = [
   {
     id: 1,
-    title: 'Happy Clients',
-    value: 45,
+    title: 'Core Focus Areas',
+    value: 4,
   },
   {
     id: 2,
-    title: 'Year of Experience',
+    title: 'Conference Publications',
     value: 2,
   },
   {
     id: 3,
-    title: 'Completed Tasks',
-    value: 40,
+    title: 'Leadership Recognitions',
+    value: 3,
   },
   {
     id: 4,
-    title: 'Awards Received',
-    value: 6,
+    title: 'Undergraduate Degree Track',
+    value: 1,
   },
 ];
 
 export const myExperience: myExperienceTypes[] = [
   {
     id: 1,
-    year: '2023 - Present',
-    title: 'Product Designer',
-    company: 'Vortex',
-    label: 'Tech Firm',
+    year: '2022 - Present',
+    title: 'B.Sc. in Civil Engineering',
+    company: 'Rajshahi University of Engineering & Technology (RUET)',
+    label: 'Undergraduate',
     description:
-      'Headed product design initiatives, defined design strategy, and ensured alignment with business objectives for market-leading products.',
-    link: 'vortex.com',
+      'Final-year civil engineering student building a strong foundation in engineering fundamentals, research skills, technical communication, and analytical study.',
+    link: 'https://www.ruet.ac.bd',
     logo: vortexLogo,
     logoLight: vortexLogoLight,
   },
   {
     id: 2,
-    year: '2022 - 2023',
-    title: 'Senior UI/UX Designer',
-    company: 'PixelWorks',
-    label: 'Design Studio',
+    year: 'May 2019 - Nov 2022',
+    title: 'HSC, Science',
+    company: 'Satkhira Govt. College',
+    label: 'Higher Secondary',
     description:
-      'Provided leadership in UI/UX design, mentored junior designers, and collaborated with cross-functional teams for product excellence.',
-    link: 'pixelworks.io',
+      'Completed higher secondary science education with strong preparation in mathematics and physical science for later civil engineering study.',
+    link: 'https://www.satkhiragovtcollege.edu.bd',
     logo: pixelworksLogo,
     logoLight: pixelworksLogoLight,
-  },
-  {
-    id: 3,
-    year: '2020 - 2022',
-    title: 'UI/UX Designer',
-    company: 'Athon',
-    label: 'Tech Start-up',
-    description:
-      'Led UI/UX design projects from concept to delivery, conducted user testing, and iterated designs for optimal user experience.',
-    link: 'athon.com',
-    logo: athonLogo,
-    logoLight: athonLogoLight,
   },
 ];
 
 export const myStack: myStackTypes[] = [
   {
     id: 1,
-    title: 'Figma',
-    description: 'Interface Design Tool',
+    title: 'Engineering Tools',
+    description: 'AutoCAD, ETABS, ArcGIS',
     logo: figmaIcon,
     lightLogo: figmaIcon,
-    link: 'https://www.figma.com',
+    link: '/contact',
   },
   {
     id: 2,
-    title: 'Notion',
-    description: 'Productivity Tool',
+    title: 'Productivity Tools',
+    description: 'Microsoft Excel, Word, PowerPoint',
     logo: notionIcon,
     lightLogo: notionIcon,
-    link: 'https://www.notion.so',
+    link: '/contact',
   },
   {
     id: 3,
-    title: 'Webflow',
-    description: 'No Code Design Tool',
+    title: 'Research Skills',
+    description: 'Literature review, writing, citation workflow',
     logo: webflowIcon,
     lightLogo: webflowIcon,
-    link: 'https://www.webflow.com',
+    link: '/services',
   },
   {
     id: 4,
-    title: 'Framer',
-    description: 'No Code Design Tool',
+    title: 'Technical Communication',
+    description: 'Academic presentation and engineering reporting',
     logo: framerIcon,
     lightLogo: framerIcon,
-    link: 'https://www.framer.com',
+    link: '/services',
   },
   {
     id: 5,
-    title: 'Slack',
-    description: 'Productivity Tool',
+    title: 'Leadership',
+    description: 'Campus ambassador engagement and collaboration',
     logo: slackIcon,
     lightLogo: slackIcon,
-    link: 'https://slack.com',
+    link: '/services',
   },
   {
     id: 6,
-    title: 'Asana',
-    description: 'Productivity Tool',
+    title: 'Engineering Fundamentals',
+    description: 'Structural, geotechnical, transportation, infrastructure',
     logo: asanaIcon,
     lightLogo: asanaIcon,
-    link: 'https://www.asana.com',
+    link: '/services',
   },
 ];
 
 export const myServices: myServicesTypes[] = [
   {
     id: 1,
-    title: 'Web Design',
-    description: 'Crafting visually captivating and user-friendly websites for online success.',
+    title: 'Academic Research & Technical Writing',
+    description:
+      'Actively engaged in research-oriented learning through review writing, conference publication context, and academic documentation.',
     icon: webDesignIcon,
     lightIcon: webDesignIconLight,
     link: '/services',
   },
   {
     id: 2,
-    title: 'Web Development',
-    description: 'Bringing ideas to life with robust and scalable web solutions.',
+    title: 'Civil Engineering Software-Based Learning',
+    description:
+      'Building technical confidence through practical use of civil engineering and productivity tools for analysis and presentation.',
     icon: webDevIcon,
     lightIcon: webDevIconLight,
     link: '/services',
   },
   {
     id: 3,
-    title: 'Graphic Design',
-    description: 'Creating visually stunning designs that captivate and engage audiences.',
+    title: 'Engineering Communication & Presentation',
+    description:
+      'Strengthening communication for reports, presentations, and collaborative academic activities beyond coursework.',
     icon: graphicDesignIcon,
     lightIcon: graphicDesignIconLight,
     link: '/services',
   },
   {
     id: 4,
-    title: 'SEO Optimization',
-    description: 'Elevating online visibility and driving organic traffic through strategies.',
+    title: 'Problem Solving Through Analytical Study',
+    description:
+      'Focused on research-driven and practical approaches to real-world civil engineering problem solving.',
     icon: seoOptIcon,
     lightIcon: seoOptIconLight,
     link: '/services',
@@ -307,78 +285,59 @@ export const myServices: myServicesTypes[] = [
 export const myShowCases: myShowCasesTypes[] = [
   {
     id: 1,
-    title: 'Devcraft',
-    description: 'Showcasing expertise, passion, and innovation in the realm of development.',
-    link: 'vortex.com',
-    type: 'Portfolio',
-    theme: 'Dark',
-    pages: 4,
+    title: 'Academic Civil Engineering Works',
+    description:
+      'Detailed project entries will be added soon, including academic works, research-focused contributions, and civil engineering problem-solving projects.',
+    link: 'www.ruet.ac.bd',
+    type: 'Academic',
+    theme: 'In Progress',
+    pages: 1,
     image: project_1,
   },
   {
     id: 2,
-    title: 'Zenith Gym',
-    description: 'Empowering fitness enthusiasts with an immersive online experience.',
-    link: 'zenith.com',
-    type: 'Fitness',
-    theme: 'Light',
-    pages: 5,
-    image: project_2,
-  },
-  {
-    id: 3,
-    title: 'Novus Agency',
-    description: 'Transforming ideas into digital realities with creativity and expertise.',
-    link: 'novus.com',
-    type: 'Business',
-    theme: 'Dark',
-    pages: 6,
-    image: project_3,
-  },
-  {
-    id: 4,
-    title: 'Apex Agency',
+    title: 'Research-Focused Engineering Projects',
     description:
-      'Setting the pinnacle of digital excellence with cutting-edge solutions and creativity.',
-    link: 'apex.com',
-    type: 'Business',
-    theme: 'Light',
-    pages: 6,
-    image: project_4,
+      'Projects will be updated soon with detailed descriptions covering academic, research, and engineering-based work.',
+    link: 'www.ruet.ac.bd',
+    type: 'Research',
+    theme: 'Planned',
+    pages: 1,
+    image: project_2,
   },
 ];
 
 export const testimonials: testimonialsTypes[] = [
   {
     id: 1,
-    name: 'Sarah Thompson',
+    name: 'Review Paper Published at ICCEI 2025',
     description:
-      'I am thrilled with the website for my business. His ability to translate my vision into a visually stunning...',
-    location: 'New York City, USA.',
+      'Published a review paper in the ICCEI 2025 proceedings and strengthened research writing and academic communication skills through mentor-guided collaboration.',
+    location: 'ICCEI 2025, RUET | Dec 12-14, 2025',
     avatar: client_1,
   },
   {
     id: 2,
-    name: 'John Anderson',
+    name: 'First Conference Paper Published',
     description:
-      'Working with Pragadesh was a game-changer for my online business. His web design skills are exceptional.',
-    location: 'Sydney, Australia.',
+      'Published a first conference paper as an undergraduate student, marking an important early milestone in academic and research development.',
+    location: 'Undergraduate Research Milestone',
     avatar: client_2,
   },
   {
     id: 3,
-    name: 'Mark Davis',
+    name: 'Best Campus Ambassador Recognition',
     description:
-      'Pragadesh’s creativity and technical expertise transformed our website into a visually stunning platform.',
-    location: 'London, UK.',
+      'Recognized by ACI Student Chapter - CUET for engagement, contribution, and leadership as a campus ambassador.',
+    location: 'ACI Student Chapter - CUET',
     avatar: client_3,
   },
   {
     id: 4,
-    name: 'Laura Adams',
+    name: 'Ongoing Academic Development',
     description:
-      'Pragadesh is a artist when it comes to website. He transformed my outdated website into a modern masterpiece.',
-    location: 'Madrid, Spain.',
+      'Continuously strengthening technical profile through analytical study, communication practice, and civil engineering-focused learning.',
+    location: 'Rajshahi, Bangladesh',
     avatar: client_4,
   },
 ];
@@ -386,45 +345,49 @@ export const testimonials: testimonialsTypes[] = [
 export const myServicesPlans: myServicesPlansTypes[] = [
   {
     id: 1,
-    service: 'Web Design',
-    price: '$50',
-    description: 'Crafting visually captivating and user-friendly websites for online success.',
-    completedWorks: '25+',
-    experience: '5+',
-    totalHoursWorked: '500 hours',
+    service: 'Review Paper - ICCEI 2025 Proceedings',
+    price: 'Dec 2025',
+    description:
+      'Published in the proceedings of ICCEI 2025 at Rajshahi University of Engineering & Technology (RUET).',
+    completedWorks: 'Venue: ICCEI 2025, RUET',
+    experience: 'Type: Review Paper',
+    totalHoursWorked: 'DOI/Link: To be updated',
     icon: webDesignIcon,
     lightIcon: webDesignIconLight,
   },
   {
     id: 2,
-    service: 'Web Dev',
-    price: '$60',
-    description: 'Bringing ideas to life with robust and scalable web solutions.',
-    completedWorks: '30+',
-    experience: '6+',
-    totalHoursWorked: '420 hours',
+    service: 'First Conference Paper',
+    price: 'Published',
+    description:
+      'Completed and published during undergraduate study with focus on academic writing and technical communication growth.',
+    completedWorks: 'Venue: Conference details updating',
+    experience: 'Type: Conference Paper',
+    totalHoursWorked: 'DOI/Link: To be updated',
     icon: webDevIcon,
     lightIcon: webDevIconLight,
   },
   {
     id: 3,
-    service: 'Graphic Design',
-    price: '$40',
-    description: 'Creating visually stunning designs that captivate and engage audiences.',
-    completedWorks: '40+',
-    experience: '8+',
-    totalHoursWorked: '328 hours',
+    service: 'Publication Profile Expansion',
+    price: 'In Progress',
+    description:
+      'Upcoming publication entries will include paper title, co-authors, conference or journal name, and formal reference links.',
+    completedWorks: 'Scope: Academic publication record',
+    experience: 'Status: Updating regularly',
+    totalHoursWorked: 'Details: Will be added soon',
     icon: graphicDesignIcon,
     lightIcon: graphicDesignIconLight,
   },
   {
     id: 4,
-    service: 'SEO',
-    price: '$70',
-    description: 'Elevating online visibility and driving organic traffic through strategies.',
-    completedWorks: '20+',
-    experience: '4+',
-    totalHoursWorked: '223 hours',
+    service: 'Research Documentation',
+    price: 'Active',
+    description:
+      'Maintaining a clear and structured academic portfolio for future graduate and professional opportunities.',
+    completedWorks: 'Scope: Research and writing archive',
+    experience: 'Stage: Final-year undergraduate',
+    totalHoursWorked: 'Updates: Ongoing',
     icon: seoOptIcon,
     lightIcon: seoOptIconLight,
   },
@@ -432,73 +395,58 @@ export const myServicesPlans: myServicesPlansTypes[] = [
 
 export const faqData: FAQ[] = [
   {
-    question: 'Can you work with clients remotely?',
+    question: 'What is your current academic status?',
     answer:
-      'Absolutely! I have experience working with clients from all around the world. Through effective communication channels such as email, video calls, and project management tools, I ensure seamless collaboration regardless of geographical location.',
+      'I am currently in the final stage of my undergraduate program in Civil Engineering at RUET.',
   },
   {
-    question: 'Will my website be mobile-friendly?',
+    question: 'What are your current focus areas?',
     answer:
-      "Absolutely! Mobile responsiveness is a top priority in today's digital landscape. I design and develop websites that are fully responsive and adaptable to various devices and screen sizes. Your website will provide an optimal user experience whether accessed via desktops, smartphones, or tablets.",
+      'My current focus areas include structural, geotechnical, transportation, and infrastructure-related learning with research orientation.',
   },
   {
-    question: 'How long does it typically take to complete a project?',
+    question: 'Do you have publication experience?',
     answer:
-      'The timeline for each project varies depending on its scope and complexity. Factors such as the number of pages, functionalities, and the client feedback process can impact the timeline. Upon discussing your project requirements, I will provide you with a realistic timeline and keep you updated throughout the process.',
+      'Yes. I have published conference and review papers during undergraduate study and continue to expand my publication profile.',
   },
   {
-    question: 'Can you integrate third-party tools into my website?',
+    question: 'Which software tools are you learning and using?',
     answer:
-      'Yes, I have experience integrating various third-party tools, plugins, and platforms into websites. Whether you need to integrate e-commerce functionalities, social media integration, email marketing services, or anything else, I can recommend and help ensure smooth integration.',
+      'I am currently using and improving skills in AutoCAD, ETABS, ArcGIS, Microsoft Excel, Word, and PowerPoint.',
   },
   {
-    question: 'Do you offer website maintenance?',
+    question: 'How can someone contact you right now?',
     answer:
-      'Yes, I offer website maintenance services to ensure your website remains up to date, secure, and optimized. From performance updates to adding new features and content, I can provide ongoing support to keep your website running smoothly.',
-  },
-  {
-    question: 'How do you handle website revisions?',
-    answer:
-      'I value your input and collaboration throughout the design process. Upon completing an initial design, I encourage you to provide feedback. I incorporate your suggestions and revisions to ensure the final product aligns with your vision.',
-  },
-  {
-    question: 'Can you optimize my website?',
-    answer:
-      'Certainly! I incorporate search engine optimization (SEO) best practices into my development process. This includes using relevant keywords, optimizing meta tags, creating search-engine-friendly URLs, and ensuring your website has a solid foundation for better search engine visibility.',
-  },
-  {
-    question: 'What are your payment terms?',
-    answer:
-      'Payment terms may vary depending on the project scope and duration. Generally, I request an initial deposit before commencing work.',
+      'You can contact me via email at sumaiyabintekamal219@gmail.com, phone at +880 1318-466465, or LinkedIn at my profile link.',
   },
 ];
 
 export const followerData: FollowerData[] = [
   {
-    platform: 'twitter',
-    followers: '12.6K',
-    url: 'https://twitter.com/',
+    platform: 'location',
+    followers: 'Rajshahi, Bangladesh',
+    url: 'https://maps.google.com/?q=Rajshahi,Bangladesh',
     icon: XLogo,
     lightIcon: XLogoLight,
   },
   {
-    platform: 'Instagram',
-    followers: '8.3K',
-    url: 'https://www.instagram.com/',
+    platform: 'Email',
+    followers: 'sumaiyabintekamal219@gmail.com',
+    url: 'mailto:sumaiyabintekamal219@gmail.com',
     icon: instagramIcon,
     lightIcon: instagramIconLight,
   },
   {
     platform: 'LinkedIn',
-    followers: '2.5K',
-    url: 'https://www.linkedin.com/',
+    followers: 'sumaiya-binty-kamal',
+    url: 'https://www.linkedin.com/in/sumaiya-binty-kamal-b2aa7a313/',
     icon: linkedInIcon,
     lightIcon: linkedInIconLight,
   },
   {
-    platform: 'Dribbble',
-    followers: '3.2K',
-    url: 'https://dribbble.com/',
+    platform: 'Phone',
+    followers: '01318466465',
+    url: 'tel:+8801318466465',
     icon: dribbleIcon,
     lightIcon: dribbleLight,
   },

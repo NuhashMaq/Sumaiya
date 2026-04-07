@@ -13,8 +13,8 @@ export default function MyStack() {
         <SectionHeading
           darkImage={stackIcon}
           lightImage={stackIconLight}
-          title='My Stacks'
-          description='Commitment to staying updated with the latest design trends and techniques.'
+          title='Technical & Professional Skills'
+          description='Engineering tools, productivity workflow, research communication, and leadership competencies.'
         />
       </div>
 

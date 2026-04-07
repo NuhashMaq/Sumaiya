@@ -16,7 +16,7 @@ export default function Home() {
       <MyServices />
       <ShowCase
         showData={2}
-        isMore
+        isMore={false}
       />
       <Testimonials />
     </div>

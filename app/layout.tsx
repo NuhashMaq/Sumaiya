@@ -60,7 +60,7 @@ export const metadata: Metadata = {
         url: '/opengraph-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Preview of PS Parwez Portfolio',
+        alt: 'Preview of Sumaiya Binty Kamal Portfolio',
       },
     ],
   },
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
   },
   authors: [
     {
-      name: siteConfig.author?.name ?? 'PS Parwez',
+      name: siteConfig.author?.name ?? 'Sumaiya Binty Kamal',
       url: siteConfig.author?.url ?? siteConfig.url,
     },
   ],
