@@ -1,10 +1,8 @@
 import { Equal, X } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
-import { AvatarMe } from '@/app/assets/assets';
-
 import AvailableForWorkBtn from '../ui/AvailableForWorkBtn';
+import LogoType from './logo-type';
 
 interface MobileNavProps {
   isMenuOpen: boolean;
@@ -31,17 +29,9 @@ const MobileLogo = () => {
     <Link
       href='/'
       aria-label='Go to homepage'
-      className='bg-border-color relative flex aspect-square h-auto w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-800 p-1 transition-all duration-300 hover:scale-95 sm:hidden'
+      className='relative flex aspect-square h-auto w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-zinc-800 p-0 transition-all duration-300 hover:scale-95 sm:hidden'
     >
-      <div className='absolute inset-0 rounded-full'>
-        <Image
-          src={AvatarMe}
-          fill
-          quality={100}
-          alt='Avatar'
-          className='block h-full w-full object-fill object-center opacity-80'
-        />
-      </div>
+      <LogoType />
     </Link>
   );
 };
